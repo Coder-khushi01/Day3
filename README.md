@@ -1,54 +1,66 @@
 # Day3
-TrainingISO file
+
+## TrainingISO file
+
 In Linux, an ISO file is a single file containing a complete copy of the data from a CD, DVD, or other optical media, formatted as an ISO 9660 file system.
 
-Dual Boot
+## Dual Boot
+
 Dual booting allows a computer to run two different operating systems, enabling users to choose which one to boot into upon startup.
 
-VMware and Virtual box
+## VMware and Virtual box
+
 VMware is a commercial product known for its enterprise-grade features, performance, and comprehensive support, while VirtualBox is an open-source, free alternative, generally favored for personal use, testing, and development.
 
-Bare metal installation
+## Bare metal installation
+
 It refers to setting up an operating system directly on a physical server's hardware, without any intervening virtualization layer like a hypervisor.
 
-Partitioning schemes
-Dividing a hard disk into separate sections.
+## Partitioning schemes
 
-Each section (partition) acts like an independent disk.
+^ Dividing a hard disk into separate sections.
 
-Helps organize data and install multiple OS.
+^ Each section (partition) acts like an independent disk.
 
-Types
+^ Helps organize data and install multiple OS.
 
-MBR (Master Boot Record):
-Max 4 primary partitions.
+### Types
 
-Supports up to 2 TB.
+#### MBR (Master Boot Record):
 
-Older, used with BIOS.
+^ Max 4 primary partitions.
 
-less flexible
+^ Supports up to 2 TB.
 
-GPT (GUID Partition Table):
-Supports 128+ partitions.
+^ Older, used with BIOS.
 
-Works with disks >2 TB.
+^ less flexible
 
-Newer, used with UEFI.
+#### GPT (GUID Partition Table):
 
-more flexible
+^ Supports 128+ partitions.
 
-Permissions & Shell programming:
-File and directory permissions:
+^ Works with disks >2 TB.
+
+^ Newer, used with UEFI.
+
+^ more flexible
+
+## Permissions & Shell programming:
+#### File and directory permissions:
+
 chmod (Change mode): It is used to change the access permissions of files and directories For the owner, group,and others. syntax :
 
-chmod [permissions] [file_name]
+## chmod [permissions] [file_name]
+
 For example: chmod + x filename.sh
 
 chmod +x filename.sh
+
 The command chmod +x filename.sh is used to add execute permission to a file (usually a script like .sh), so it can be run as a program.
 
-Syntax Breakdown
+ Syntax Breakdown
+
 Component	Description
 chmod	Stands for Change Mode – used to change file permissions
 +x	Adds execute permission
@@ -97,16 +109,21 @@ Changing group only:
 
 Changing both group and owner permissions:
 
-Redirection:
+## Redirection:
+
 In Linux, whenever an individual runs a command, it can take input, give output, or do both. Redirection helps us redirect these input and output functionalities to the files or folders we want, and we can use special commands or characters to do so.
 
-Types of Redirection:
+###  Types of Redirection:
+
 Overwrite Redirection (For stdout): Overwrite redirection is useful when you want to store/save the output of a command to a file and replace all the existing content of that file. for example, if you run a command that gives a report, and you want to save the report to the existing file of the previous report you can use overwrite redirection to do this.
 ">" standard output
 
-Append Redirection (For stdout): With the help of this Redirection, you can append the output to the file without compromising the existing data of the file. image image
+#### Append Redirection (For stdout):
 
-Overwrite Redirection (For stdin): Redirects the standard input of a command to a file. "<" standard input
+With the help of this Redirection, you can append the output to the file without compromising the existing data of the file. image image
+
+#### Overwrite Redirection (For stdin):
+Redirects the standard input of a command to a file. "<" standard input
 
 sorting with help of Redirection:
 image
